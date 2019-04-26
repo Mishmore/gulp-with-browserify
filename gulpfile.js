@@ -86,7 +86,7 @@ gulp.task('assets', () => {
     }))
 });
 
-gulp.task('default', ['html', 'js', 'sass', 'img', 'assets', 'serve']);
+gulp.task('default', ['html', 'js', 'sass', 'img', 'assets']);
 
 //asegurarse de que este corriendo en el servidor
 gulp.task('serve', () => {
