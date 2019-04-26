@@ -1,0 +1,100 @@
+@mixin normal-text {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-family: 'Lato';
+}
+@mixin weight-text {
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@mixin border($color) {
+  border-left: 15px solid $color;
+}
+@mixin button-archivo {
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 3px 10px;
+  margin: 10px 0;
+
+  i {
+    margin: 0 0 3px 5px;
+    font-size: 10px;
+  }
+}
+@mixin check-style {
+  input[type="checkbox"] {
+    margin: 0 15px;
+    display: none;
+  }
+
+  label {
+    margin-bottom: 0!important;
+    padding: 0 0 0 35px;
+    display: inline-block;
+    position: relative;
+  }
+
+  label:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: table;
+    background: #fff;
+    border: 1px solid #bcbcbc;
+    border-radius: 3px;
+    position: absolute;
+    left: -1px;
+    top: 4px;
+    margin: 0 10px;
+  }
+
+  input[type="checkbox"]:checked + label:before {
+    background: #fff;
+    font-family: "Font Awesome\ 5 Free";
+    content: '\f00c';
+    font-weight: 900;
+    color: $orange;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 9.2px;
+    position: absolute;
+  }
+}
+@mixin modals {
+  .modal-other {
+    .title-password {
+      font-size: 18px;
+    }
+
+    .modal-body {
+      padding: 45px;
+      font-family: "Lato";
+      color: #737373;
+
+      .close {
+        position: absolute;
+        top: -18px;
+        right: -15px;
+        color: $orange;
+        font-size: 35px;
+        opacity: 1!important;
+        background-color: #fff;
+        border-radius: 100%;
+        line-height: 0;
+        text-shadow: none;
+      }
+
+      .icon-check {
+        img {
+          margin: 30px 0;
+        }
+      }
+    }
+  }
+}
