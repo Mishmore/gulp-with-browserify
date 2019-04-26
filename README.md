@@ -18,7 +18,7 @@ Using npm:
 ```
 git clone https://github.com/Mishmore/gulp-with-browserify.git
 cd gulp-with-browserify
-yarn install
+gulp serve
 ```
 
 ## Development server
